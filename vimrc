@@ -17,6 +17,7 @@ set modelines=0   " Disable modelines as a security precaution
 set nomodeline
 set hlsearch      " Highlight search results
 set ignorecase    " Ignore case when searching
+set smartcase
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
