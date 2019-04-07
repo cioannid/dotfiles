@@ -18,6 +18,7 @@ set nomodeline
 set hlsearch      " Highlight search results
 set ignorecase    " Ignore case when searching
 set smartcase
+set mouse=a
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
