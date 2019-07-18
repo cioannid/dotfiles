@@ -43,6 +43,9 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/tComment'
+Plug 'tpope/vim-dispatch'
+Plug 'mhinz/vim-grepper'
+Plug 'tpope/vim-obsession'
 
 if g:has_async
   Plug 'dense-analysis/ale'

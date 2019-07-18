@@ -194,6 +194,41 @@ set diffopt+=vertical
 
 set background=dark
 
+let g:grepper = {}
+let g:grepper.tools = ['grep', 'git', 'rg']
+
+" Search for the current word
+nnoremap <Leader>* :Grepper -tool git -cword -noprompt<CR>
+
+" Search for the current selection
+nmap gs <plug>(GrepperOperator)
+xmap gs <plug>(GrepperOperator)
+
+" Open Grepper-prompt for a particular grep-alike tool
+nnoremap <Leader>g :Grepper -tool git<CR>
+nnoremap <Leader>G :Grepper -tool rg<CR>
+
+" Persist undo history between sessions
+set undofile
+augroup vimrc
+  autocmd!
+  autocmd BufWritePre /tmp/* setlocal noundofile
+augroup END
+if !has('nvim')
+  set undodir=~/.vim/undo
+endif
+
+" Neovim specific configuration
+if has('nvim')
+  " Map <Esc> to <C-\><C-n> for easier exit from terminal mode
+  tnoremap <Esc> <C-\><C-n>
+  tnoremap <C-v><Esc> <Esc>
+
+  " Highlight the cursor when in terminal mode
+  highlight! TermCursorNC guibg=red guifg=white ctermbg=1 ctermfg=15
+endif
+" End of Neovim specific configuration
+
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
