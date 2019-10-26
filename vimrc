@@ -130,6 +130,9 @@ endfunction
 inoremap <Tab> <C-r>=InsertTabWrapper()<CR>
 inoremap <S-Tab> <C-n>
 
+" Shortcut file write
+nnoremap <Leader>w :w<CR>
+
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
 
