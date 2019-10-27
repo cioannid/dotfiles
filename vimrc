@@ -133,6 +133,14 @@ inoremap <S-Tab> <C-n>
 " Shortcut file write
 nnoremap <Leader>w :w<CR>
 
+" Shortcuts for filling and accessing clipboard
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
 
