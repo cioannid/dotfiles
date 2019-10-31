@@ -148,6 +148,10 @@ nnoremap <Leader>to :tabo<CR>
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
 
+" Shortcut quickfix open and close
+nnoremap <Leader>cc :cclose<CR>
+nnoremap <Leader>co :copen<CR>
+
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
