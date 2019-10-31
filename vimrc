@@ -149,6 +149,10 @@ nnoremap <Leader>to :tabo<CR>
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
 
+" Shortcut quickfix open and close
+nnoremap <Leader>cc :cclose<CR>
+nnoremap <Leader>co :copen<CR>
+
 " vim-test mappings
 nnoremap <silent> <Leader>f :TestFile<CR>
 nnoremap <silent> <Leader>n :TestNearest<CR>
