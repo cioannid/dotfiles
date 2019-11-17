@@ -46,6 +46,7 @@ Plug 'vim-scripts/tComment'
 Plug 'tpope/vim-dispatch'
 Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-obsession'
+Plug 'jiangmiao/auto-pairs'
 
 if g:has_async
   Plug 'dense-analysis/ale'
