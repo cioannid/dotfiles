@@ -130,11 +130,11 @@ inoremap <S-Tab> <C-n>
 nnoremap <Leader><Leader> <C-^>
 
 " vim-test mappings
-nnoremap <silent> <Leader>t :TestFile<CR>
-nnoremap <silent> <Leader>s :TestNearest<CR>
+nnoremap <silent> <Leader>f :TestFile<CR>
+nnoremap <silent> <Leader>n :TestNearest<CR>
 nnoremap <silent> <Leader>l :TestLast<CR>
-nnoremap <silent> <Leader>a :TestSuite<CR>
-nnoremap <silent> <Leader>gt :TestVisit<CR>
+nnoremap <silent> <Leader>s :TestSuite<CR>
+nnoremap <silent> <Leader>v :TestVisit<CR>
 
 " Run commands that require an interactive shell
 nnoremap <Leader>r :RunInInteractiveShell<Space>
