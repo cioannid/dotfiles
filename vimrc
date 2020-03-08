@@ -143,7 +143,6 @@ vmap <Leader>P "+P
 
 " Shortcut tab closing
 nnoremap <Leader>tc :tabc<CR>
-nnoremap <Leader>to :tabo<CR>
 
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
