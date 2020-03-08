@@ -159,6 +159,8 @@ nnoremap <silent> <Leader>l :TestLast<CR>
 nnoremap <silent> <Leader>s :TestSuite<CR>
 nnoremap <silent> <Leader>v :TestVisit<CR>
 
+let g:test#runner_commands = ['RSpec']
+
 " Run commands that require an interactive shell
 nnoremap <Leader>r :RunInInteractiveShell<Space>
 
