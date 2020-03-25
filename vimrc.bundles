@@ -48,6 +48,7 @@ Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-obsession'
 Plug 'jiangmiao/auto-pairs'
 Plug 'altercation/vim-colors-solarized'
+Plug 'vim-airline/vim-airline'
 
 if g:has_async
   Plug 'dense-analysis/ale'

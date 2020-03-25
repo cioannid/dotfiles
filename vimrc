@@ -215,6 +215,12 @@ set diffopt+=vertical
 set background=dark
 colorscheme solarized
 
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#default#layout = [
+    \ [ 'a', 'b', 'c' ],
+    \ [ 'x', 'z']
+    \ ]
+
 let g:grepper = {}
 let g:grepper.tools = ['grep', 'git', 'rg']
 
