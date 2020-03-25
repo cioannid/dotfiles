@@ -213,6 +213,7 @@ set complete+=kspell
 set diffopt+=vertical
 
 set background=dark
+colorscheme solarized
 
 let g:grepper = {}
 let g:grepper.tools = ['grep', 'git', 'rg']
