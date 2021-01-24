@@ -133,6 +133,10 @@ inoremap <S-Tab> <C-n>
 " Shortcut file write
 nnoremap <Leader>w :w<CR>
 
+" Copy to clipboard GitHub URLs
+nnoremap <Leader>u :.GBrowse!<CR>
+vmap <Leader>u :'<,'>GBrowse!<CR>
+
 " Shortcuts for filling and accessing clipboard
 vmap <Leader>y "+y
 vmap <Leader>d "+d
