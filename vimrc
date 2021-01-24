@@ -186,6 +186,7 @@ nnoremap [r :ALEPreviousWrap<CR>
 
 " Map Ctrl + p to open fuzzy find (FZF)
 nnoremap <c-p> :Files<cr>
+nnoremap <c-b> :Buffers<cr>
 
 " Turn off search results highlighting
 nnoremap <Leader>h :noh<CR>
