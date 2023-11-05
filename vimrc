@@ -160,7 +160,6 @@ nnoremap <Leader>co :copen<CR>
 nnoremap <silent> <Leader>f :TestFile<CR>
 nnoremap <silent> <Leader>n :TestNearest<CR>
 nnoremap <silent> <Leader>l :TestLast<CR>
-nnoremap <silent> <Leader>s :TestSuite<CR>
 nnoremap <silent> <Leader>v :TestVisit<CR>
 
 let g:test#runner_commands = ['RSpec']
@@ -232,8 +231,8 @@ nmap gs <plug>(GrepperOperator)
 xmap gs <plug>(GrepperOperator)
 
 " Open Grepper-prompt for a particular grep-alike tool
-nnoremap <Leader>g :Grepper -tool git<CR>
-nnoremap <Leader>G :Grepper -tool rg<CR>
+nnoremap <Leader>s :Grepper -tool git<CR>
+nnoremap <Leader>S :Grepper -tool rg<CR>
 
 " Persist undo history between sessions
 set undofile
