@@ -34,6 +34,10 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
+if which rbenv &>/dev/null ; then
+  eval "$(rbenv init -)"
+fi
+
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
