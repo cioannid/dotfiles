@@ -53,6 +53,7 @@ Plug 'tpope/vim-obsession'
 Plug 'jiangmiao/auto-pairs'
 Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 if g:has_async
   Plug 'dense-analysis/ale'
