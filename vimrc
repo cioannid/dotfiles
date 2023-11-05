@@ -217,6 +217,8 @@ syntax enable
 set background=light
 colorscheme solarized
 
+nnoremap <Leader>gl :Gclog -50<CR>
+
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#default#layout = [
     \ [ 'a', 'b', 'c' ],
