@@ -213,7 +213,8 @@ set complete+=kspell
 " Always use vertical diffs
 set diffopt+=vertical
 
-set background=dark
+syntax enable
+set background=light
 colorscheme solarized
 
 let g:airline_powerline_fonts = 1
