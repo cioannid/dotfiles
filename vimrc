@@ -80,6 +80,12 @@ augroup ale
   endif
 augroup END
 
+let g:ale_fixers = {
+  \   'javascript': ['eslint']
+\}
+
+let g:ale_fix_on_save = 1
+
 " When the type of shell script is /bin/sh, assume a POSIX-compatible
 " shell for syntax highlighting purposes.
 let g:is_posix = 1
