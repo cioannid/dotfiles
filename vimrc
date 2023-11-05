@@ -131,6 +131,8 @@ endfunction
 inoremap <Tab> <C-r>=InsertTabWrapper()<CR>
 inoremap <S-Tab> <C-n>
 
+inoremap <C-l> <Del>
+
 " Shortcut file write
 nnoremap <Leader>w :w<CR>
 
