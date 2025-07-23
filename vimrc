@@ -220,8 +220,10 @@ set complete+=kspell
 set diffopt+=vertical
 
 syntax enable
+
+set termguicolors
 set background=light
-colorscheme solarized
+autocmd vimenter * ++nested colorscheme solarized8
 
 nnoremap <Leader>gl :Gclog -50<CR>
 
