@@ -54,6 +54,9 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'lifepillar/vim-solarized8', { 'branch': 'neovim' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'github/copilot.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'CopilotC-Nvim/CopilotChat.nvim'
 
 if g:has_async
   Plug 'dense-analysis/ale'
