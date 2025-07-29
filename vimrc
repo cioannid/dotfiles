@@ -146,13 +146,11 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>u :.GBrowse!<CR>
 vmap <Leader>u :'<,'>GBrowse!<CR>
 
-" Shortcuts for filling and accessing clipboard
-vmap <Leader>y "+y
-vmap <Leader>d "+d
+" Always use the clipboard for all operations
+set clipboard+=unnamedplus
+" Shortcuts for accessing clipboard
 nmap <Leader>p "+p
 nmap <Leader>P "+P
-vmap <Leader>p "+p
-vmap <Leader>P "+P
 
 " Shortcut tab closing
 nnoremap <Leader>tc :tabc<CR>
