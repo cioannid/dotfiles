@@ -223,7 +223,10 @@ set termguicolors
 set background=light
 autocmd vimenter * ++nested colorscheme solarized8
 
-nnoremap <Leader>gl :Gclog -50<CR>
+" Map <Leader>gg to open LazyGit
+" Map <Leader>gl to open LazyGitLog
+nnoremap <Leader>gg :LazyGit<CR>
+nnoremap <Leader>gl :LazyGitLog<CR>
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#default#layout = [
@@ -258,8 +261,8 @@ endif
 " Neovim specific configuration
 if has('nvim')
   " Map <Esc> to <C-\><C-n> for easier exit from terminal mode
-  tnoremap <Esc> <C-\><C-n>
-  tnoremap <C-v><Esc> <Esc>
+  " tnoremap <Esc> <C-\><C-n>
+  " tnoremap <C-v><Esc> <Esc>
 
   " Highlight the cursor when in terminal mode
   highlight! TermCursorNC guibg=red guifg=white ctermbg=1 ctermfg=15
