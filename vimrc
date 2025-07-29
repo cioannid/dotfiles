@@ -170,6 +170,10 @@ nnoremap <silent> <Leader>v :TestVisit<CR>
 
 let g:test#runner_commands = ['RSpec']
 
+let test#strategy = "neovim"
+let g:test#neovim#start_normal = 1
+let test#neovim#term_position = "vert"
+
 " Run commands that require an interactive shell
 nnoremap <Leader>r :RunInInteractiveShell<Space>
 
