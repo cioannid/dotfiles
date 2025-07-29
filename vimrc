@@ -81,9 +81,10 @@ augroup ale
 augroup END
 
 let g:ale_fixers = {
-  \   'javascript': ['eslint']
+  \   'javascript': ['prettier', 'eslint']
 \}
 
+let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
 let g:ale_fix_on_save = 1
 
 " When the type of shell script is /bin/sh, assume a POSIX-compatible
