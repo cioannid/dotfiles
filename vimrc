@@ -228,12 +228,6 @@ autocmd vimenter * ++nested colorscheme solarized8
 nnoremap <Leader>gg :LazyGit<CR>
 nnoremap <Leader>gl :LazyGitLog<CR>
 
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#default#layout = [
-    \ [ 'a', 'b', 'c' ],
-    \ [ 'x', 'z']
-    \ ]
-
 let g:grepper = {}
 let g:grepper.tools = ['grep', 'git', 'rg']
 
@@ -274,4 +268,7 @@ if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
-lua require("CopilotChat").setup { }
+lua << END
+  require("CopilotChat").setup { }
+  require('lualine').setup { options = { theme = 'gruvbox' } }
+END
