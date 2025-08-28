@@ -56,6 +56,12 @@ Plug 'lifepillar/vim-solarized8', { 'branch': 'neovim' }
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'github/copilot.vim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
+Plug 'nvim-telescope/telescope-ui-select.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'olimorris/codecompanion.nvim'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'MeanderingProgrammer/render-markdown.nvim'
 Plug 'CopilotC-Nvim/CopilotChat.nvim'
 
 if g:has_async
