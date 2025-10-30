@@ -280,7 +280,23 @@ lua << END
   require('render-markdown').setup({
     file_types = { 'markdown', 'codecompanion' },
   })
-  require('lualine').setup { options = { theme = 'gruvbox' } }
+  require('lualine').setup {
+    options = {
+      theme = 'gruvbox'
+    },
+    -- Define the sections to override the default filename component
+    sections = {
+      -- lualine_c is the center section, where filename usually resides
+      lualine_c = {
+        {
+            'filename',
+            path = 1, -- Set path to 1 for the relative path
+        }
+      }
+      -- You can also re-add other default components if you want them back
+      -- For example: 'branch' is usually in lualine_a, 'mode' in lualine_b, etc.
+    }
+  }
 END
 
 lua <<EOF
