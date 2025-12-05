@@ -260,8 +260,8 @@ endif
 " Neovim specific configuration
 if has('nvim')
   " Map <Esc> to <C-\><C-n> for easier exit from terminal mode
-  " tnoremap <Esc> <C-\><C-n>
-  " tnoremap <C-v><Esc> <Esc>
+  tnoremap <Esc> <C-\><C-n>
+  tnoremap <C-v><Esc> <Esc>
 
   " Highlight the cursor when in terminal mode
   highlight! TermCursorNC guibg=red guifg=white ctermbg=1 ctermfg=15
